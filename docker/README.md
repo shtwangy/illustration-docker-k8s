@@ -43,7 +43,22 @@ remove container
 $ docker rm mycontainer
 ```
 
+### Register with Docker Hub
+rename image
+```
+$ docker tag myimage:v1 shtwangy/myimage:v1
+$ docker image ls shtwangy/myimage:v1
+```
+push image to Docker Hub
+```
+$ docker login
+$ docker push shtwangy/myimage:v1
+```
 
+pull image
+```
+$ docker pull shtwangy/myimage:v1
+```
 
 ## Ship
 
